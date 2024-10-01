@@ -1,0 +1,106 @@
+.header {
+    height: 25vw;
+    margin: 30px auto;
+    background: url('/book.png') no-repeat;
+    position: relative;
+    overflow: hidden;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    z-index: 10;
+
+}
+
+/* Other styles remain unchanged */
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header-contents {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    margin-bottom: 8px;
+    animation: fadeIn 3s;
+    z-index: 1;
+}
+
+.header-contents h2 {
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw, 22px);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-contents p {
+    color: white;
+    font-size: 1vw;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-contents input {
+    border: none;
+    color: #747474;
+    padding: 1vw 2.3vw;
+    border-radius: 10px;
+    font-size: max(1vw, 13px);
+}
+
+.header-contents input:hover {
+    
+    color: black;
+}
+
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 45%;
+    }
+    .header-contents h2 {
+        font-size: 20px;
+    }
+    .header-contents input {
+        font-size: max(0.9vw, 12px);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-contents {
+        max-width: 100%; /* Adjust the max-width for smaller screens */
+        left: 5%; /* Adjust the positioning for smaller screens */
+    }
+    .header-contents h2 {
+        font-size: 10px;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents input {
+        width: 80%; /* Adjust width for smaller screens */
+        min-height: auto;
+        text-align: justify;
+        font-size: 2vw; /* Adjust font size for smaller screens */
+        height: fit-content;
+        padding: 1vw; /* Adjust padding for smaller screens */
+        margin: 0.5vw 0; 
+        border-radius: 4px;
+        color: black;
+        /* Adjust margin for smaller screens */
+    }
+    
+    
+}
+
+

@@ -1,0 +1,227 @@
+.card-container {
+    position: relative;
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    background-color: rgb(83, 253, 253);
+    overflow: hidden;
+    margin-left: 13%;
+    margin-top: 5%;
+    margin-right: 20px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Set a maximum height */
+    overflow: hidden; 
+}
+
+.heart-container {
+    position: absolute;
+    top: -10px;
+    right: 1px;
+    cursor: pointer;
+}
+
+.add {
+    position: absolute;
+    bottom: 42px;
+    right: 1px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: red;
+    height: auto;
+}
+
+.buy-button {
+    font-size: 12px;
+    background-color: #FFA500; /* Orange */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    margin-left: 33%;
+    cursor: pointer;
+    border-radius: 8px; 
+}
+
+.detail-content {
+    margin-left: 33%;
+    margin-top: 11%;
+    position: absolute;
+    top: 0;
+}
+
+.detail-content .book-name {
+    font-size: 24px;
+    color: #636363; 
+    font-weight: bold;
+}
+
+.detail-content .book-name-actual {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    color: #5c5b5b;
+}
+
+.about {
+    font-size: 24px;
+    color: #636363; 
+    font-weight: bold;
+}
+
+.book-description {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    color: #5c5b5b; 
+    width: 65%;
+}
+
+.price-card {
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.book-item-counter {
+    position: absolute;
+    bottom: 16%;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        margin-top: 10%;
+        width: 55%;
+        margin: 0 auto 10px; 
+        margin-right: 45%;
+    }
+
+    .detail-content {
+        margin: 0 auto;
+        width: 60%;
+        max-width: 600px;
+        position: relative;
+        top: auto;
+        margin-top: 20px;
+        margin-left: 13%;
+    }
+
+    .book-description {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 10px;
+        color: #5c5b5b; 
+        width: 170%;
+    }
+
+    .detail-content .book-name {
+        font-size: 13px;
+        color: #636363; 
+        font-weight: bold;
+    }
+
+    .about {
+        font-size: 14px;
+        color: #636363; 
+        font-weight: bold;
+    }
+
+    .detail-content .book-name-actual {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 10px;
+        color: #5c5b5b;
+    }
+
+    .price-card {
+        color: blue;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .buy-button {
+        font-size: 9px;
+        position: relative;
+        left: 12.4%;
+        transform: translateX(-50%);
+    }
+
+    .add {
+        bottom: 38px;
+        right: 1px;
+        width: 25px;
+    }
+
+    .heart-container {
+        position: absolute;
+        top: -6px;
+        right: 1px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 981px) {
+    .card-container {
+        margin-top: 12%;
+        width: 40%;
+    }
+
+    .detail-content {
+        margin: 0 auto;
+        width: 60%;
+        max-width: 600px;
+        position: relative;
+        top: auto;
+        margin-top: 20px;
+        margin-left: 14%;
+    }
+
+    .book-description {
+        font-size: 14px;
+        width: 160%;
+    }
+
+    .detail-content .book-name {
+        font-size: 19px;
+    }
+
+    .about {
+        font-size: 19px;
+    }
+
+    .detail-content .book-name-actual {
+        font-size: 14px;
+    }
+
+    .price-card {
+        color: blue;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    .buy-button {
+        font-size: 9px;
+        margin-left: 39%;
+    }
+}

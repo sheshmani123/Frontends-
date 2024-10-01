@@ -1,0 +1,53 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}
+
+.food-item {
+    background: #fff; /* Background color for each card */
+    padding: 10px; /* Padding around each card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Initial shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    overflow: hidden; /* Ensure content overflow is hidden */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px; /* Set a fixed height for the card */
+    text-align: center;
+}
+
+.food-item img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the image covers the area, cropping where necessary */
+    border-radius: 10px; /* Match the card's border radius */
+}
+
+.food-item:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.food-item h3 {
+    font-size: .2em;
+    margin: 10px 0;
+    flex-grow: 1; /* Allow the title to grow and fill available space */
+}
+
+.food-item p {
+    color: #555;
+    margin: 0; /* Ensure no extra margin */
+}

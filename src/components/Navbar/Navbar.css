@@ -1,0 +1,117 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  /* Hide the menu for smaller screens */
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: #3c3b3b;
+}
+
+.navbar-menu a.active {
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right img {
+  width: 24px;
+  height: auto;
+  margin-right: 1rem;
+}
+
+.navbar-search-icon,
+.navbar-search-iconWishList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.wishlist-icon {
+  font-size: 24px;
+}
+
+.dot {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.navbar-profile {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.nav-profile-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  display: none;
+  background-color: hwb(180 83% 3%);
+  padding: 12px 25px;
+  border-radius: 4px;
+  border: 1px solid black;
+  outline: 2px solid white;
+  list-style: none;
+}
+
+.nav-profile-dropdown.active {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.nav-profile-dropdown li img {
+  width: 20px;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+.nav-profile-dropdown hr {
+  margin: 0.5rem 0;
+  border: none;
+  border-top: 1px solid #cccccc;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide the menu for smaller screens */
+  }
+}
